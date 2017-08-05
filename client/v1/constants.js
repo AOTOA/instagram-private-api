@@ -45,6 +45,7 @@ const ROUTES = {
     hashtagsInfo: 'tags/<%= encodeURI(tag) %>/info',
     hashtagsRelated: 'tags/<%= encodeURI(tag) %>/related/?visited=<%= encodeURIComponent(visited) %>&related_types=<%= encodeURIComponent(related_types) %>',
     locationsSearch: 'fbsearch/places/?count=50&query=<%= encodeURIComponent(query) %>&rank_token=<%= rankToken %>',
+    locationsSearchLatLong: 'fbsearch/places/?count=50&lat=<%= encodeURIComponent(lat) %>&lng=<%= encodeURIComponent(lng) %>&rank_token=<%= rankToken %>',
     changeProfilePicture: 'accounts/change_profile_picture/',
     mediaConfigure: 'media/configure/',
     mediaConfigureStory: 'media/configure_to_reel/',
